@@ -109,10 +109,10 @@ class CashAvailable(BaseModel):
     cash_available_for_withdrawal_hold: Optional[float] = None
     cash_available_for_withdrawal: Optional[float] = None
     clearing_cash: Optional[float] = None
-    pending_buys: Optional[int] = None
-    pending_withdrawals: Optional[int] = None
+    pending_buys: Optional[float] = None
+    pending_withdrawals: Optional[float] = None
     settled_cash: Optional[float] = None
-    settlement_hold: Optional[int] = None
+    settlement_hold: Optional[float] = None
     trade_settlement: Optional[float] = None
     model_config = ConfigDict(alias_generator=camelcase)
 
